@@ -29,13 +29,14 @@ const Header = ({ setCoordinates }) => {
       </Box> */}
 
         <nav>
-          <ul className="flex space-x-4">
-            <li className="text-lg hidden sm:block">Explore New Places</li>
+          <ul className="flex space-x-4 items-center">
+            <li className="text-2xl text-white hidden sm:block">Explore New Places</li>
 
             <Autocomplete  onLoad={onLoad} onPlaceChanged={onPlaceChanged}>
               <InputBase 
                 placeholder='Search....'
-               
+                className='px-3 py-2 rounded-md focus:outline-none '
+                style={{backgroundColor:' white', color:'black'}}
               />
             </Autocomplete>
           </ul>

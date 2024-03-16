@@ -14,7 +14,7 @@ const List = ({ places, childClicked, isLoading, type, setType, rating, setRatin
   }, [places]);
   
   return (
-    <div className='py-2 px-3 w-full flex flex-col h-full'>
+    <div className='py-4 px-3 w-full flex flex-col h-full'>
 
       <h5 className='text-xl font-normal mb-2 text-slate-900'>
         Hotel, Restaurants and Attrection around you
@@ -59,7 +59,7 @@ const List = ({ places, childClicked, isLoading, type, setType, rating, setRatin
         </div>
       </div>
 
-      <div className=' h-96 overflow-y-auto ' style={{ scrollbarWidth:'thin'}}>
+      <div className=' h-96 overflow-y-auto scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100 '  >
         <Grid container spacing={3} >
           {places?.map((place, i) => (
             <Grid item key={i} xs={12}>
