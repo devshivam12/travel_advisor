@@ -22,7 +22,7 @@ const Header = ({ setCoordinates }) => {
 
     <header className="bg-gray-800 p-4">
       <div className="container mx-auto flex justify-between items-center">
-        <h1 className="text-white text-2xl hidden sm:block">Travel Adviser</h1>
+        <h1 className="text-white text-2xl hidden sm:block">Travel Advisor</h1>
 
         {/* <Box display='flex'>
 
