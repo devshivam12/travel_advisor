@@ -6,7 +6,7 @@ import { Rating } from '@mui/material';
 
 const PlaceDetails = ({ place, selected, refProp }) => {
 
-  if(selected) refProp?.current?.scrollIntoView({behavior : 'smooth', block: 'start'})
+  if (selected) refProp?.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })
 
   return (
     <Card elevation={6}>
@@ -19,7 +19,7 @@ const PlaceDetails = ({ place, selected, refProp }) => {
           {place.name}
         </Typography>
         <Box display='flex' justifyContent='space-between'>
-         <Rating value={Number(place.rating)} readOnly/>
+          <Rating value={Number(place.rating)} readOnly />
           <Typography gutterBottom variant='subtitle1'>
             out of {place.num_reviews} reviews
           </Typography>
@@ -50,14 +50,14 @@ const PlaceDetails = ({ place, selected, refProp }) => {
 
         {place?.address && (
           <Typography gutterBottom variant='body2' color="textSecondry"
-            style={{ display: 'flex', alignItems: 'center', justifyContent:'space-between',  marginTop: '10px', }}>
+            style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginTop: '10px', }}>
             <LocationOnIcon style={{ marginRight: '5px' }} />{place.address}
           </Typography>
         )}
 
         {place.phone && (
           <Typography variant="body2" color="textSecondry"
-            style={{ display: 'flex', alignItems: 'center',  marginTop: '10px' }}>
+            style={{ display: 'flex', alignItems: 'center', marginTop: '10px' }}>
             <PhoneIcon style={{ marginRight: '5px' }} /> {place.phone}
           </Typography>
         )}

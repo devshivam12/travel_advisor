@@ -24,10 +24,6 @@ const Header = ({ setCoordinates }) => {
       <div className="container mx-auto flex justify-between items-center">
         <h1 className="text-white text-2xl hidden sm:block">Travel Advisor</h1>
 
-        {/* <Box display='flex'>
-
-      </Box> */}
-
         <nav>
           <ul className="flex space-x-4 items-center">
             <li className="text-2xl text-white hidden sm:block">Explore New Places</li>
