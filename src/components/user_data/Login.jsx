@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import { useNavigate } from 'react-router-dom'
 import { account } from '../../authentication/AuthConfig'
 import mapImage from '../../assets/map-image.jpg'
@@ -93,12 +94,10 @@ const Login = () => {
 
                             <div className="flex items-center justify-between">
                                 <div className="text-sm">
-                                    <a
-                                        href="/signup"
-                                        className="font-medium text-indigo-600 hover:text-indigo-500"
-                                    >
+                                    <Link to={"/signup"} className="font-medium text-indigo-600 hover:text-indigo-500">
                                         Don't have Account, <span className=' underline'>Sign Up</span>
-                                    </a>
+                                    </Link>
+
                                 </div>
                             </div>
 
